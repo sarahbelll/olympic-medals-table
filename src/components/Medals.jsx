@@ -26,7 +26,6 @@ const Medals = () => {
       const data = await response.json();
       console.log(data);
 
-      // Format data
       const formattedData = data.medals.map((country) => ({
         team: country.name,
         flag: country.flag,
@@ -36,14 +35,13 @@ const Medals = () => {
         totalMedals: country.medalStandings.totalMedals
       }));
 
-      // Sort by gold, silver, then bronze medals
       const sortedData = formattedData.sort((a, b) => {
         if (b.goldMedals !== a.goldMedals) return b.goldMedals - a.goldMedals;
         if (b.silverMedals !== a.silverMedals) return b.silverMedals - a.silverMedals;
         return b.bronzeMedals - a.bronzeMedals;
       });
 
-      setFormattedMedals(sortedData); // Set sorted data
+      setFormattedMedals(sortedData); 
     } catch (error) {
       setError(error.message);
     } finally {
@@ -52,15 +50,15 @@ const Medals = () => {
   };
 
   useEffect(() => {
-    fetchMedals(); // Fetch data when the component mounts
+    fetchMedals(); 
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>; // Display loading indicator
+    return <div>Loading...</div>; 
   }
 
   if (error) {
-    return <div>Error: {error}</div>; // Display error message
+    return <div>Error: {error}</div>; 
   }
 
   return (

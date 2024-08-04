@@ -13,16 +13,16 @@
     padding: 20px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 20px; /* Adjust margin for spacing */
+    margin: 20px;
   }
   
   table {
     width: 100%;
     max-width: 800px;
     border-collapse: separate;
-    border-spacing: 0 10px; /* Space between rows */
+    border-spacing: 0 10px; 
     margin: 0 auto;
-    background-color: transparent; /* Remove default table background */
+    background-color: transparent;
   }
   
   th, td {
@@ -33,38 +33,38 @@
   th {
     color: #020344;
     text-align: left;
-    background-color: #f5f5f5; /* Light background for headers */
+    background-color: #f5f5f5; 
   }
   
   tbody tr {
-    background: white; /* White background for rows */
-    border-radius: 10px; /* Rounded corners for rows */
+    background: white; 
+    border-radius: 10px; 
   }
   
   .flex-cell {
     display: flex;
     align-items: center;
-    text-align: left; /* Align text to the left if needed */
+    text-align: left; 
   }
   
   .flex-cell img {
-    width: 40px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between image and text */
+    width: 40px; 
+    height: auto; 
+    margin-right: 10px; 
   }
   
   .medal-count {
-    position: relative; /* To position the circle around the data */
+    position: relative; 
   }
   
   .medal-circle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px; /* Size of the circle */
+    width: 40px; 
     height: 40px;
     border-radius: 50%;
-    color: white; /* Text color inside the circle */
+    color: white;
     font-weight: bold;
     line-height: 1;
   }
@@ -91,11 +91,11 @@
     }
   
     .flex-cell img {
-      width: 30px; /* Adjust size for smaller screens if necessary */
+      width: 30px; 
     }
   
     .medal-circle {
-      width: 30px; /* Adjust size for smaller screens if necessary */
+      width: 30px; 
       height: 30px;
     }
   }
