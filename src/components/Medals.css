@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: rgb(40, 40, 40);
+  }
+  
+  .medals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px; /* Adjust margin for spacing */
+  }
+  
+  table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Space between rows */
+    margin: 0 auto;
+    background-color: transparent; /* Remove default table background */
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  th {
+    color: #020344;
+    text-align: left;
+    background-color: #f5f5f5; /* Light background for headers */
+  }
+  
+  tbody tr {
+    background: white; /* White background for rows */
+    border-radius: 10px; /* Rounded corners for rows */
+  }
+  
+  .flex-cell {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Align text to the left if needed */
+  }
+  
+  .flex-cell img {
+    width: 40px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+  }
+  
+  .medal-count {
+    position: relative; /* To position the circle around the data */
+  }
+  
+  .medal-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Size of the circle */
+    height: 40px;
+    border-radius: 50%;
+    color: white; /* Text color inside the circle */
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .gold {
+    background-color: #fbc869;
+  }
+  
+  .silver {
+    background-color: #bdb9b9;
+  }
+  
+  .bronze {
+    background-color: #dcb388;
+  }
+  
+  @media (max-width: 800px) {
+    table {
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  
+    .flex-cell img {
+      width: 30px; /* Adjust size for smaller screens if necessary */
+    }
+  
+    .medal-circle {
+      width: 30px; /* Adjust size for smaller screens if necessary */
+      height: 30px;
+    }
+  }
+  
